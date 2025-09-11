@@ -16,9 +16,22 @@ html {
   margin: 1.44rem;
 }
 
-#examples {
+.examples {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.44rem;
-margin: 0 auto;
+  place-items: center;
+  margin: 0 auto;
+}
+
+video {
+  display:block;
+  margin: 0 auto;
+  width: auto;
+  height: 600px;
+}
+
+p {
+  margin-top: 1rem;
+  width: 500px;
 }
