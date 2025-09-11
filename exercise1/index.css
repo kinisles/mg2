@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 20px;
+    line-height: 1.44;
+    min-height: 100%;
+  }
+
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.44rem;
+  }
+
+#exercise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    margin: 1.44rem;
+  }
+  iframe {
+    display: block;
+    margin: 1.44rem;
+    margin-top: 3em;
+  }
