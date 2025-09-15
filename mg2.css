@@ -3,3 +3,9 @@
   margin: 0;
   padding: 0;
 }
+
+#exercises a {
+  display: block;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
