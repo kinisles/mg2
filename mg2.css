@@ -4,8 +4,106 @@
   padding: 0;
 }
 
-#exercises a {
-  display: block;
-  padding: 0.5rem 0.5rem;
-  margin-bottom: 0.5rem;
+html {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  overflow: auto;
+  min-height: 100vh; 
+}
+
+body::before {
+  content: "";
+  position: fixed; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.5; 
+  z-index: -1; 
+}
+
+
+
+header {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+nav {
+  text-align: left;
+  padding: 1rem 2.5rem;
+}
+h1 {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 7rem;
+  color: #0D3F87;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+h3  {
+  color: #0D3F87;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+#nav a, #exercises a {
+  display: block; 
+  margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  color: black;
+  text-decoration: none;
+  position: relative; 
+  width: max-content; 
+}
+
+#nav a::after, #exercises a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: black;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+#nav a:hover::after, #exercises a:hover::after {
+  width: 100%; 
+}
+
+
+#exercises {
+  padding: 10px 5rem;
+}
+
+footer {
+  margin: 0 ;
+  padding: 1rem;
+}
+
+footer p {
+  font-size: 15px;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+  text-align: center;
+  color: #0D3F87;
 }
