@@ -19,19 +19,30 @@ html {
 .examples {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.44rem;
-  place-items: center;
+  gap: 0.5rem;
+  row-gap: 2rem;      
+  justify-items: center;   
+  align-items: start;     
   margin: 0 auto;
 }
 
+
 video {
-  display:block;
-  margin: 0 auto;
-  width: auto;
-  height: 600px;
+  display: block;
+  margin: 0 auto 1.5rem auto; 
+  width: 300px;
+  height: auto;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto 1.5rem auto; 
+  width: 350px;
+  height: auto;
 }
 
 p {
-  margin-top: 1rem;
-  width: 500px;
+  margin-top: 2rem;
+  width: 350px;
+  margin: 0 auto;
 }
